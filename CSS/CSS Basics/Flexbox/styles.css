@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 400px;
+    border: 2px solid red;
+
+    /* Defines a flex container, enabling the use of flex properties for its children. */
+    display: flex;
+
+    /* Specifies the direction of the main axis along which flex items are placed. */
+    flex-direction: row;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; 
+    flex-direction: row;
+
+    /* To preserve the width of flex items */
+     flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse;  */
+
+    /* A shorthand for setting both flex-direction and flex-wrap in one property. */
+    /* flex-flow: row wrap; */
+
+    /* Aligns flex items along the main axis (horizontal for row, vertical for column). */
+     justify-content: flex-start;
+    justify-content: flex-end;
+     justify-content: center; 
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: center;
+    justify-content: flex-start;
+    justify-content: center;
+    justify-content: flex-end;
+
+
+ 
+    /* Aligns flex items along the cross axis (vertical for row, horizontal for column) */
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch;
+    align-items: baseline;
+    align-items: center;
+    align-items: flex-start;
+    
+
+
+    /* gap: 10px; */
+
+    /* Aligns multiple lines of flex items along the cross axis when there is extra space. */
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+    align-content: flex-start;
+   
+
+
+
+
+  
+
+
+}
+
+.box{
+     border: 1px solid green;
+     background-color: antiquewhite;
+     /* width: 100px; */
+     /* If content overflows the width will increase dynamically */
+     flex-basis: 100px;
+     flex-basis: 100px;
+    
+}
+
+#box1{
+    order: 1;
+    /* Specifies how much a flex item will shrink relative to the rest of the flex items. */
+    flex-shrink: 4;
+    align-self: flex-start;
+}
+
+#box3{
+    order: 5;
+    /* Specifies how much a flex item will grow relative to the rest of the flex items. */
+    /* flex-grow: 1; */
+    flex-shrink: 2;
+    align-self: flex-end;
+}
+
+#box2{
+    order: 3;
+    align-self: stretch;
+    /* flex-grow: 3; */
+    
+}
+
+#box4{
+    order: 5;
+    
+}

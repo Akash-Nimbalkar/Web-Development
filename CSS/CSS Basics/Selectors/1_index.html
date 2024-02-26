@@ -1,0 +1,143 @@
+<!-- Selectors in CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Element Selector */
+      p {
+        color: rgb(255, 0, 0);
+        font-size: x-large;
+      }
+      h1 {
+        background-color: aqua;
+      }
+
+      /* Multiple Selector */
+      table,
+      tr,
+      td,
+      th {
+        border: 3px solid black;
+      }
+
+      /* Class Selector */
+      .green {
+        color: green;
+      }
+      .blue {
+        color: blue;
+      }
+      .small {
+        font-size: small;
+      }
+      .large {
+        font-size: large;
+      }
+
+      /* ID Selector */
+      #first-button {
+        color: red;
+      }
+      #intro-para {
+        background-color: rgba(255, 0, 119, 0.389);
+      }
+
+      /* Pseudo Class Selector */
+      button:hover {
+        color: rgb(0, 255, 128);
+      }
+      a:hover {
+        color: green;
+      }
+      .link-color:hover {
+        color: pink;
+      }
+
+      /* Universal Selector */
+      * {
+        background-color: yellow;
+      }
+
+      /* Nested Selector */
+      .container p {
+        background-color: aqua;
+      }
+      .container p a {
+        text-decoration: underline;
+      }
+
+      /* Attribute Selector */
+      a[target="_blank"] {
+        background-color: red;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <p>This is 31st December guyss!!!!</p>
+    <h1>This is my first heading</h1>
+    <h1>This is my second heading</h1>
+    <p>This is second para</p>
+
+    <table>
+      <thead>
+        <th>Roll No.</th>
+        <th>Name</th>
+        <th>City</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Akash</td>
+          <td>Satara</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Yash</td>
+          <td>Akola</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Shreya</td>
+          <td>Jalgaon</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="green">abcd</p>
+    <p class="green">pqrs</p>
+    <p class="blue">wxyz</p>
+
+    <h1 class="small">This is h1</h1>
+    <h2 class="small">This is h2</h2>
+    <h3 class="small">This is h3</h3>
+    <h4 class="large">This is h4</h4>
+    <h5 class="large">This is h5</h5>
+    <h6 class="large">This is h6</h6>
+
+    <button id="first-button">Submit</button>
+
+    <p id="intro-para">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, repellendus.
+    </p>
+    <a href="https://thecodehelp.in">Buy DSA Course</a>
+    <a class="link-color" href="https://www.rscoe.edu.in"
+      >RSCOE Official Website</a
+    >
+    <!--Can do the same with ID also-->
+
+    <div class="container">
+      <p>This is a paragraph inside the container.</p>
+      <p>Another paragraph with a <a href="#">link</a> inside.</p>
+    </div>
+
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+  </body>
+</html>

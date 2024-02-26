@@ -1,0 +1,27 @@
+.box{
+    background-color: aquamarine;
+    transform: translate(90px,150px);
+    transform: translateX(90px);
+    transform: translateY(150px);
+    /* transform: rotate(-45deg); */
+
+}
+
+.box2{
+    margin: 200px;
+    background-color: yellow;
+    text-align: center;
+    transform: scale(2,4);
+    transform: scaleX(2);
+    transform: scaleY(4);
+}
+
+.box3{
+    background-color: orange;
+    text-align: center;
+    transform: skew(-45deg);
+    transform: matrix(1, 0.5, 0, 1, 20, 30);
+   
+      
+}
+

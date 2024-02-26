@@ -1,0 +1,31 @@
+<!-- CSS Specificity -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: red;
+      }
+      .first-para {
+        color: green;
+      }
+      #para1 {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="first-para" id="para1" style="color: blueviolet">
+      Understanding CSS Specificity
+    </p>
+
+    <!-- CSS Specificity Priority wise(From highest to lowest)
+         1. Inline CSS
+         2. ID Selector
+         3. Classes, pseudo-classes, attribute selectors 
+         4. Tag selector and pseudo-elements   -->
+  </body>
+</html>
