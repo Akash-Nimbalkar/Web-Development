@@ -1,0 +1,34 @@
+/* 
+* is a universal selector
+:root is a pseudo selector
+
+* Its specificity will be higher.
+:root Its specificity will be less. */
+
+:root {
+    --dark-red: #981a2c;
+  }
+*{
+    --dark-red: rgb(236, 84, 84);
+}
+
+
+
+.container {
+  border: 1px solid brown;
+  background-color: darkkhaki;
+  height: 500px;
+  width: 500px;
+
+  /* This will not work initially as scope of variable is initially
+     limited to box class only 
+   background-color: var(--dark-red); */
+  background-color: var(--dark-red); 
+}
+
+.box {
+  border: 2px solid green;
+  background-color: aqua;
+  /* --dark-red: #981a2c; */
+  color: var(--dark-red);
+}
