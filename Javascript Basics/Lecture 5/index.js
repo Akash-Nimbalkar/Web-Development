@@ -129,7 +129,7 @@ console.log(person);
 {
   let x = 10;
 }
-console.log(x); //Out of scope - {} has scope inside braces only
+// console.log(x); //Out of scope - {} has scope inside braces only
 
 function ab() {
   const ab = 65;
@@ -140,3 +140,15 @@ console.log(ab);
 function ba() {
   const ab = 75;
 }
+
+for (var i = 0; i < 10; i++) {}
+console.log(i); //It will work
+
+if (true) {
+  let m = 100;
+}
+// console.log(m); This will throw an error
+if (true) {
+  var m = 258;
+}
+console.log(m);

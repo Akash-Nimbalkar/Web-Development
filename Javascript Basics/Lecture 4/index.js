@@ -246,4 +246,5 @@ let totalSum = arr2.reduce(
   (accumulator, currentValue) => accumulator + currentValue,
   0
 );
+
 console.log(totalSum);
